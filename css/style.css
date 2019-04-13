@@ -1,0 +1,2637 @@
+/*Template Name: xLander - Premium Flexible Landing Page Template
+Theme URL: http://themeforest.net/user/DSA79/
+Description: xLander - Premium Flexible Landing Page Template
+Author: DSA79
+Author URL: http://themeforest.net/user/DSA79
+Version: 1.0.0
+Website: www.dsathemes.com
+Tags: responsive, premium template, html5 template, one page, landing page, business, corporate, project
+*/
+
+
+/* ------------------------------------------ */
+
+
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+
+/*   01 - General & Basic Styles   */
+
+
+/*   02 - Header & Navigation      */
+
+
+/*   03 - Intro      			   */
+
+
+/*   04 - About		      		   */
+
+
+/*   05 - About-1	      		   */
+
+
+/*   06 - Skills				   */
+
+
+/*   07 - Services         		   */
+
+
+/*   08 - Features            	   */
+
+
+/*   09 - History				   */
+
+
+/*   10 - Statistic banner         */
+
+
+/*   11 - Portfolio        		   */
+
+
+/*   12 - Team					   */
+
+
+/*   13 - Pricing				   */
+
+
+/*   14 - Clients		 	  	   */
+
+
+/*   15 - Testimonials	      	   */
+
+
+/*   16 - Blog		 	  	   	   */
+
+
+/*   17 - Promo LIne	 	  	   */
+
+
+/*   18 - Contact Info 	  	   	   */
+
+
+/*   19 - Google Map 	  	   	   */
+
+
+/*   20 - Contacts	 	  	   	   */
+
+
+/*   21 - Footer		 	  	   */
+
+
+/*   22 - Scroll to Top	 	  	   */
+
+
+/*   23 - Contact Form Response    */
+
+
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */
+
+#content_wrapper {
+	overflow: hidden;
+}
+
+.animated {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Preload Animation 
+/*------------------------------------------*/
+
+.animationload {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #262626;
+	z-index: 999999;
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/icons/loader.html);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70px 70px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Headers
+/*------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Lists
+/*------------------------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Link Setting
+/*------------------------------------------*/
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Theme Button
+/*------------------------------------------*/
+
+.btn-theme {
+	background-color: #ffc400;
+	color: #333;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.btn-theme:hover {
+	background-color: #d9a701;
+	color: #fff;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Button Hover/Focus
+/*------------------------------------------*/
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:focus {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Section Titlebar
+/*------------------------------------------*/
+
+.titlebar {
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.titlebar h3 {
+	color: #222;
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.titlebar h2 {
+	color: #222;
+	font-size: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.titlebar h2:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 200px;
+	background: #428bca;
+	margin: 15px auto;
+	position: relative;
+}
+
+
+/* ==========================================================================
+   02. HEADER & NAVIGATION
+   ========================================================================== */
+
+
+/*------------------------------------------*/
+
+
+/*	 Logo Image    
+/*------------------------------------------*/
+
+.navbar-brand {
+	padding: 18px 15px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Navigation Menu    
+/*------------------------------------------*/
+
+.navbar {
+	margin-bottom: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 8px 0px;
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+.navbar-fixed-top {
+	background-color: rgba(30, 30, 30, 0.45);
+	border-bottom: none;
+}
+
+.navbar-nav > li > a {
+	color: #fff;
+	font-size: 14px;
+	line-height: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 15px;
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Navbar Scroll   
+/*------------------------------------------*/
+
+.scroll-fixed-navbar {
+	padding: 0;
+}
+
+.scroll-fixed-navbar.navbar-fixed-top {
+	background-color: #262626;
+	border-bottom: 1px solid #222;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Menu Hover
+/*------------------------------------------*/
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a.selected-nav {
+	color: #428bca;
+	background-color: transparent;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Responsive Menu    
+/*------------------------------------------*/
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	background-color: transparent;
+	padding: 10px;
+	margin: 13px 30px 13px 0;
+	border: none;
+	color: #fff;
+	border: 2px solid #ddd;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ddd;
+}
+
+
+/* ==========================================================================
+   03. INTRO
+   ========================================================================== */
+
+#intro {
+	width: 100%;
+	background-image: url(../img/thumbs/intro_bkg.jpg);
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-size: cover;
+	color: #fff;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Overlay Pattern 
+/*------------------------------------------*/
+
+.overlay {
+	background-image: url(../img/thumbs/overlay.png);
+	background-color: rgba(0, 0, 0, 0.4);
+	background-repeat: repeat;
+	height: 100%;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 INTRO CONTENT
+/*------------------------------------------*/
+
+#intro_content {
+	padding-top: 230px;
+	padding-bottom: 230px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 INTRO TEXT
+/*------------------------------------------*/
+
+#intro h2 {
+	font-size: 75px;
+	font-weight: 800;
+	line-height: 85px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+.intro_text p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	margin-bottom: 25px;
+	padding: 0 4%
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 INTRO NEWSLETTER
+/*------------------------------------------*/
+
+#newsletter_form {
+	background-color: rgba(20, 20, 20, 0.5);
+	padding: 20px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.message {
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Newsletter Form Input
+/*------------------------------------------*/
+
+#newsletter-top form input[type="email"] {
+	background-color: #fff;
+	width: 70%;
+	color: #414141;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 10px 15px;
+	border: none;
+}
+
+#newsletter-top form input[type="submit"] {
+	width: 29%;
+	background-color: #ffc400;
+	color: #333;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 11px;
+	border: none;
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+#newsletter-top form input[type="submit"]:hover {
+	background-color: #d9a701;
+	color: #fff;
+}
+
+
+/* ==========================================================================
+   04. ABOUT
+   ========================================================================== */
+
+#about {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	TABS HOLDER IMAGE
+/*------------------------------------------*/
+
+#tabs-holder .img-responsive {
+	display: inline-block;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	TABS
+/*------------------------------------------*/
+
+.nav-tabs {
+	border: none;
+}
+
+.nav-tabs > li > a {
+	color: #222;
+	font-size: 22px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0;
+	border: none;
+}
+
+.nav-tabs > li:first-child {
+	border-right: 1px solid #999;
+	padding-right: 20px;
+}
+
+.nav-tabs > li:last-child {
+	padding-left: 20px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #ffc400;
+	border: none;
+	padding: 0;
+}
+
+.nav-tabs > li > a:hover {
+	color: #ffc400;
+	border: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	Tab Description
+/*------------------------------------------*/
+
+.tab-content > .tab-pane {
+	padding: 25px 0;
+	border: none;
+	border: none;
+}
+
+.tab-content > .tab-pane p {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+.tab-content a {
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+
+/* ==========================================================================
+   05. ABOUT-1
+   ========================================================================== */
+
+#about-1 {
+	background-color: #f5f5f5;
+	border-top: 1px solid #eee;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	ACCORDION HOLDER IMAGE
+/*------------------------------------------*/
+
+#accordion-holder .img-responsive {
+	display: inline-block;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	ACCORDION
+/*------------------------------------------*/
+
+.panel-group .panel {
+	margin-bottom: 10px;
+	background: none;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	Panel Title
+/*------------------------------------------*/
+
+.panel-heading {
+	padding: 0;
+	background: none !important;
+	border: 0 !important;
+}
+
+.panel-title {
+	color: #222;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+	text-transform: uppercase;
+}
+
+.panel-title > a {
+	display: block;
+	color: #222;
+	padding: 12px 0;
+}
+
+.panel-title > a:hover {
+	color: #ffc400;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	Panel Title Icon
+/*------------------------------------------*/
+
+.panel-title i {
+	color: #ffc400;
+	font-size: 28px;
+	margin-right: 10px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	Panel Content 
+/*------------------------------------------*/
+
+.panel-body {
+	color: #444;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+	border: 0
+}
+
+.panel-default > .panel-heading + .panel-collapse {
+	border: none;
+	border-top: none;
+}
+
+
+/* ==========================================================================
+   06. SKILLS
+   ========================================================================== */
+
+#skills {
+	background-image: url(../img/parallax_bg/skills.jpg);
+	background-attachment: fixed !important;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	color: #fff;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 SKILLS TITLEBAR
+/*------------------------------------------*/
+
+#skills .titlebar {
+	margin-bottom: 30px;
+}
+
+#skills .titlebar h2 {
+	color: #fff;
+}
+
+#skills .titlebar h2:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 100px;
+	background: #ffc400;
+	margin: 15px auto;
+	position: relative;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Circle Progress Bars
+/*------------------------------------------*/
+
+.chart {
+	position: relative;
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+.chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chart span {
+	color: #a9a9a9;
+	font-size: 40px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	line-height: 130px;
+	display: inline-block;
+}
+
+.chart span:after {
+	content: '%';
+	margin-left: 0;
+	font-size: 40px;
+}
+
+#skills h4 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 25px;
+}
+
+
+/* ==========================================================================
+   07. SERVICES
+   ========================================================================== */
+
+#services {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  SERVICE IMAGE
+/*------------------------------------------*/
+
+#services_image .img-responsive {
+	display: inline-block;
+	margin-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  SERVICE BOX
+/*------------------------------------------*/
+
+.service-box {
+	margin-bottom: 40px;
+}
+
+.service-box h4 {
+	color: #222;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.service-box i {
+	margin-right: 10px;
+}
+
+.service-box p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  SERVICE BUTTONS
+/*------------------------------------------*/
+
+#service-buttons {
+	margin-top: 30px;
+}
+
+#service-buttons a {
+	margin-right: 20px;
+}
+
+
+/* ==========================================================================
+   08. FEATURES
+   ========================================================================== */
+
+#features {
+	background-image: url(../img/parallax_bg/features.jpg);
+	background-attachment: fixed !important;
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	color: #fff;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  FEATURES TITLEBAR
+/*------------------------------------------*/
+
+#features .titlebar h3, #features .titlebar h2 {
+	color: #fff;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  FEATURE BOX
+/*------------------------------------------*/
+
+.features-box {
+	margin-bottom: 40px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Feature Icon
+/*------------------------------------------*/
+
+.icon-box {
+	width: 70px;
+	height: 70px;
+	line-height: 70px !important;
+	text-align: center;
+	float: left;
+	font-size: 22px;
+	color: #fff;
+}
+
+.icon-box i {
+	color: #428bca;
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Feature Text
+/*------------------------------------------*/
+
+.features-text {
+	overflow: hidden;
+	padding: 0px 0px 0px 30px;
+}
+
+.features-text h4 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.features-text p {
+	color: #ddd;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+	padding-right: 20px;
+}
+
+
+/* ==========================================================================
+   09. HISTORY
+   ========================================================================== */
+
+#history {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 TIMELINE 
+/*------------------------------------------*/
+
+.timeline {
+	background-image: url(../img/thumbs/timeline-bg.png);
+	background-repeat: repeat-y;
+	background-position: center center;
+	background-color: transparent;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 TIMELINE YEAR 
+/*------------------------------------------*/
+
+.timeline-year {
+	padding: 30px 0 30px;
+}
+
+.timeline-year.first {
+	padding-top: 0;
+}
+
+.timeline-year.last {
+	padding-bottom: 0;
+}
+
+.timeline-year span {
+	background-color: #ffc400;
+	color: #333;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 TIMELINE ITEM 
+/*------------------------------------------*/
+
+.timeline-item {
+	display: table;
+	position: relative;
+}
+
+.timeline-item:before {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border: 2px solid #d5d5d5;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.timeline-item-content {
+	background-color: #f5f5f5;
+	border: 1px solid #f5f5f5;
+	position: relative;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	Timeline Item Content Arrow
+/*------------------------------------------*/
+
+.timeline-item-content:before {
+	width: 20px;
+	height: 20px;
+	background-color: #f5f5f5;
+	content: "";
+	position: absolute;
+	right: -11px;
+	top: 50%;
+	margin-top: -9px;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.timeline-item-content.pull-right:before {
+	right: auto;
+	left: -10px;
+}
+
+.timeline-item-content h4 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	Timeline Item Hover
+/*------------------------------------------*/
+
+.timeline-item:hover .timeline-item-content {
+	border: 1px solid #262626;
+	background-color: #262626;
+	color: #fff;
+}
+
+.timeline-item:hover .timeline-item-content:before {
+	background-color: #262626;
+	border-right: 1px solid #262626;
+	border-top: 1px solid #262626;
+}
+
+.timeline-item:hover.timeline-item:before {
+	background-color: #ffc400;
+	border-color: #ffc400;
+}
+
+.timeline-item:hover .timeline-item-content.pull-right:before {
+	border-color: transparent transparent #262626 #262626;
+}
+
+
+/* ==========================================================================
+   10. STATISTIC BANNER
+   ========================================================================== */
+
+#statistic_banner {
+	background-image: url(../img/parallax_bg/statistic-banner.jpg);
+	background-attachment: fixed !important;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  STATISTIC BANNER TITLEBAR
+/*------------------------------------------*/
+
+#statistic_banner .titlebar h3, #statistic_banner .titlebar h2 {
+	color: #fff;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  STATISTIC BLOCK
+/*------------------------------------------*/
+
+.statistic-block {
+	text-align: center;
+}
+
+.statistic-icon {
+	color: #fff;
+	font-size: 80px;
+	line-height: 80px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.statistic-number {
+	color: #fff;
+	font-size: 80px;
+	font-family: 'Oswald', sans-serif;
+	line-height: 80px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.statistic-text {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   11. LATEST WORKS
+   ========================================================================== */
+
+#portfolio {
+	padding-top: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	   PORTFOLIO TITLEBAR
+/*------------------------------------------*/
+
+#portfolio .titlebar {
+	margin-bottom: 40px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  FILTER BUTTONS
+/*------------------------------------------*/
+
+#gallery-filter {
+	margin-bottom: 50px;
+}
+
+.btn-toolbar .btn-group {
+	float: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	   Button Settings
+/*------------------------------------------*/
+
+#gallery-filter .btn-group > .btn {
+	background: #f4f4f4;
+	color: #333;
+	font-size: 15px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0 3px;
+	padding: 8px 16px;
+	text-shadow: none;
+	-webkit-box-shadow: 0 0 0 0;
+	-moz-box-shadow: 0 0 0 0;
+	box-shadow: 0 0 0 0;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.btn-group > .btn:first-child:not(:last-child), .btn-group > .btn:last-child:not(:first-child) {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	   Filter Button Hover
+/*------------------------------------------*/
+
+#gallery-filter .btn-group > .btn:hover {
+	color: #fff;
+	background-color: #ffc400;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Filter Button Active
+/*------------------------------------------*/
+
+#gallery-filter .btn-group > .btn.active, #gallery-filter .btn-group > .btn.focus {
+	color: #222;
+	background-color: #ffc400;
+	box-shadow: 0 0 0 0;
+	cursor: default;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  PORTFOLIO IMAGES HOLDER
+/*------------------------------------------*/
+
+.portfolio-items-list {
+	margin: 0;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Portfolio Item
+/*------------------------------------------*/
+
+.portfolio-item {
+	position: relative;
+	display: none;
+	opacity: 0;
+	-moz-opacity: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.portfolio-item a {
+	cursor: url(../img/icons/pointer.png), crosshair;
+}
+
+.hover-overlay {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.hover-overlay img {
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Overlay Content 
+/*------------------------------------------*/
+
+.overlay-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 20;
+	width: 100%;
+	text-align: center;
+	zoom: 1;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.overlay-content h4 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.overlay-content h5 {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Overlay Background 
+/*------------------------------------------*/
+
+.item-overlay {
+	opacity: 0;
+	-moz-opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(225, 196, 0, 0.75);
+	-moz-transition: opacity 400ms ease-out;
+	-webkit-transition: opacity 400ms ease-out;
+	-o-transition: opacity 400ms ease-out;
+	transition: opacity 400ms ease-out;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Image Hover Effect 
+/*------------------------------------------*/
+
+.hover-overlay:hover > img {
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+
+.hover-overlay:hover .item-overlay {
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
+.portfolio-item:hover .overlay-content {
+	bottom: 40%;
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
+
+/* ==========================================================================
+   12. TEAM
+   ========================================================================== */
+
+#team {
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  TEAM MEMBER
+/*------------------------------------------*/
+
+.team-member {
+	margin-bottom: 50px;
+}
+
+.team-member .img-responsive {
+	display: inline-block;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Team Member Meta
+/*------------------------------------------*/
+
+.team-img-meta h5 {
+	text-transform: uppercase;
+	font-weight: 800;
+	margin: 20px 0px 10px 0;
+}
+
+.team-img-meta h6 {
+	font-size: 14px;
+	color: #ffc400;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.team-img-meta p {
+	color: #757575;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Team Member Social Icons 
+/*------------------------------------------*/
+
+.team-member-socials {
+	text-align: right;
+	display: inline-block;
+	margin: 10px auto;
+}
+
+.team-member-socials li {
+	float: left;
+	display: inline-block !important;
+	vertical-align: top;
+	width: auto !important;
+	clear: none !important;
+}
+
+.page_social {
+	width: 30px;
+	height: 30px;
+	color: #666;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	margin: 0 3px 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Team Member Social Icons Hover 
+/*------------------------------------------*/
+
+.page_social.ico_facebook:hover {
+	color: #3b5998;
+}
+
+.page_social.ico_twitter:hover {
+	color: #00a9ed;
+}
+
+.page_social.ico_behance:hover {
+	color: #00a8e7;
+}
+
+.page_social.ico_google_plus:hover {
+	color: #cd1111;
+}
+
+.page_social.ico_linkedin:hover {
+	color: #015886;
+}
+
+.page_social.ico_dribbble:hover {
+	color: #d92d84;
+}
+
+.page_social.ico_instagram:hover {
+	color: #beb3a8;
+}
+
+.page_social.ico_pinterest:hover {
+	color: #ac281a;
+}
+
+.page_social.ico_dropbox:hover {
+	color: #008ad2;
+}
+
+.page_social.ico_skype:hover {
+	color: #00a9ed;
+}
+
+.page_social.ico_youtube:hover {
+	color: #cd1b20;
+}
+
+.page_social.ico_tumblr:hover {
+	color: #3a5976;
+}
+
+.page_social.ico_vimeo:hover {
+	color: #00adee;
+}
+
+.page_social.ico_flickr:hover {
+	color: #d2d2d2;
+}
+
+.page_social.ico_github:hover {
+	color: #222;
+}
+
+.page_social.ico_renren:hover {
+	color: #364a83;
+}
+
+.page_social.ico_vk:hover {
+	color: #3b5998;
+}
+
+.page_social.ico_xing:hover {
+	color: #015f5e;
+}
+
+.page_social.ico_weibo:hover {
+	color: #be4443;
+}
+
+.page_social.ico_rss:hover {
+	color: #ff6600;
+}
+
+.page_social.ico_digg:hover {
+	color: #222;
+}
+
+.page_social.ico_deviantart:hover {
+	color: #57675d;
+}
+
+.page_social.ico_envelope:hover {
+	color: #999;
+}
+
+.page_social.ico_delicious:hover {
+	color: #0A0A0A;
+}
+
+
+/* ==========================================================================
+   13. PRICING 
+   ========================================================================== */
+
+#pricing {
+	background-color: #f5f5f5;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 PRICING TABLE
+/*------------------------------------------*/
+
+#price_1, #price_2, #price_3, #price_4 {
+	margin-bottom: 50px;
+	padding: 0 5px;
+}
+
+.pricing-table {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Table Header
+/*------------------------------------------*/
+
+.pricing-table h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 100px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Table Price Plan
+/*------------------------------------------*/
+
+.pricing-table .price {
+	background-color: #eee;
+	height: 120px;
+	color: #222;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	line-height: 120px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.price-row .price span {
+	font-size: 75px;
+}
+
+.price-row .price sup {
+	top: -35px;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Table Body
+/*------------------------------------------*/
+
+.pricing-table ul.features {
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 5px 40px;
+}
+
+.pricing-table ul.features li {
+	border-bottom: 1px solid #ccc;
+	padding: 13px 0;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Table Button
+/*------------------------------------------*/
+
+.pricing-table .btn {
+	margin: 30px 0;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Table Highlight
+/*------------------------------------------*/
+
+.pricing-table.highlight {
+	background-color: #ffc400;
+	border-color: #d9a701;
+}
+
+.pricing-table.highlight .price {
+	background-color: #d9a701;
+	color: #fff;
+	border-color: #d9a701;
+}
+
+.pricing-table.highlight ul.features {
+	color: #333;
+}
+
+.pricing-table.highlight ul.features li {
+	border-color: #d9a701;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Table Highlight Buttons
+/*------------------------------------------*/
+
+.pricing-table.highlight .btn-theme {
+	background-color: #333;
+	color: #fff;
+}
+
+.pricing-table.highlight .btn-theme:hover {
+	background-color: #444;
+}
+
+
+/* ==========================================================================
+   14. CLIENTS
+   ========================================================================== */
+
+#clients {
+	padding-top: 80px;
+	padding-bottom: 150px;
+	position: relative;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 CLIENTS CAROUSEL NAVIGATION
+/*------------------------------------------*/
+
+.customNavigation {
+	display: inline-block;
+	position: absolute;
+	bottom: 80px;
+	right: 49%;
+}
+
+.customNavigation .btn {
+	padding: 4px 10px;
+}
+
+.customNavigation i {
+	font-size: 20px;
+	color: #fff;
+}
+
+
+/* ==========================================================================
+   15 TESTIMONIALS 
+   ========================================================================== */
+
+#testimonials {
+	background-color: #f5f5f5;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  TESTIMONIALS TITLEBAR
+/*------------------------------------------*/
+
+#testimonials h3 {
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+#testimonials .clients-counter {
+	color:   #428bca;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Testimonial Message 
+/*------------------------------------------*/
+
+.testi-content {
+	background-color: #fff;
+	position: relative;
+	padding: 0;
+	margin: 0 0 40px;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.testimonial p {
+	color: #777;
+	margin: 0;
+	padding: 20px 15px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Testimonial Message Arrow
+/*------------------------------------------*/
+
+.testi-arrow {
+	height: 32px;
+	width: 32px;
+	background-image: url(../img/icons/testimonial-arrow-down.png);
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	position: absolute;
+	top: 100%;
+	left: 47%;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Testimonial Message Avatar 
+/*------------------------------------------*/
+
+.testimonial .client-img {
+	width: 65px;
+	height: 65px;
+	display: inline-block;
+	margin: 0 auto 10px;
+}
+
+.testimonial .client-img img {
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Testimonial Message Author
+/*------------------------------------------*/
+
+.testimonial .testi-author {
+	display: inline-block;
+	padding: 0 0 0 15px;
+	text-align: left;
+	position: relative;
+	top: 10px;
+}
+
+.testimonial h4 {
+	color: #000;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 0;
+	display: block;
+}
+
+.testimonial span {
+	color: #999;
+	font-size: 15px;
+	margin: 0 0 20px;
+	display: block;
+}
+
+
+/* ==========================================================================
+   16. BLOG
+   ========================================================================== */
+
+#blog {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  BLOG ARTICLE
+/*------------------------------------------*/
+
+#blog article {
+	margin-bottom: 50px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Blog Post Titlebar
+/*------------------------------------------*/
+
+#blog .blog-post-titlebar h4 {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 500;
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Blog Post Meta
+/*------------------------------------------*/
+
+.blog-post-info {
+	color: #666;
+	padding-bottom: 10px;
+	font-style: italic;
+}
+
+.blog-post-info a {
+	color: #ffc400;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Blog Post Description
+/*------------------------------------------*/
+
+.blog-post-desc {
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Blog Post Button
+/*------------------------------------------*/
+
+#blog .btn-theme {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 8px 16px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Video Content Settings
+/*------------------------------------------*/
+
+.video-block {
+	position: relative;
+	padding-bottom: 75.25%;
+	padding-top: 0px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-block iframe, .video-block object, .video-block embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+/* ==========================================================================
+   17. PROMO LINE
+   ========================================================================== */
+
+#promo_line {
+	background-image: url(../img/parallax_bg/promo-line.jpg);
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 PROMO LINE CONTENT
+/*------------------------------------------*/
+
+#promo_line h2 {
+	color: #fff;
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+#promo_line p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+
+#promo_line a {
+	margin-right: 15px;
+}
+
+
+/* ==========================================================================
+   18. CONTACT-INFO 
+   ========================================================================== */
+
+#contact-info {
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Contact Info
+/*------------------------------------------*/
+
+.contact-info {
+	margin-bottom: 40px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Contact Info Icon
+/*------------------------------------------*/
+
+.contact-info .fa {
+	color:   #428bca;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 10px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Contact Text
+/*------------------------------------------*/
+
+.contact-info h4 {
+	color: #222;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.contact-info p {
+	color: #666;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.contact-info a {
+	color:   #428bca;
+	font-weight: 700;
+}
+
+.contact-info a:hover {
+	color: #ffc400;
+}
+
+
+/* ==========================================================================
+   19. GOOGLE MAP
+   ========================================================================== */
+
+.googlemap-wrapper {
+	position: relative;
+}
+
+.googlemap-wrapper img {
+	max-width: none !important;
+}
+
+.map-canvas {
+	width: 100%;
+	height: 500px;
+	padding: 6px;
+	background-color: #f0f0f0;
+	border: 1px solid #ddd;
+}
+
+.map-canvas:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	margin: -15px 0 0 -15px;
+	width: 30px;
+	height: 30px;
+	color: #2f2f2f;
+	content: '\f110';
+	text-align: center;
+	font-size: 20px;
+	font-family: 'FontAwesome';
+	line-height: 30px;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ==========================================================================
+   20. CONTACTS 
+   ========================================================================== */
+
+#contact {
+	background-image: url(../img/parallax_bg/contacts.jpg);
+	background-attachment: fixed !important;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	color: #aaa;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Contact Titlebar
+/*------------------------------------------*/
+
+#contact .titlebar {
+	margin-bottom: 20px;
+}
+
+#contact .titlebar h3, #contact .titlebar h2 {
+	color: #ddd;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  CONTACT FORM
+/*------------------------------------------*/
+
+#contact-form {
+	margin-top: 30px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Contact Form Input
+/*------------------------------------------*/
+
+#contact-form .form-control {
+	height: 50px;
+	background-color: rgba(30, 30, 30, 0.3);
+	font-size: 14px;
+	margin-bottom: 20px;
+	border: 1px solid #666;
+	box-shadow: 0 0 0 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+	background-color: #f3f3f3;
+	color: #444;
+	font-size: 14px;
+	margin-bottom: 15px;
+	padding: 12px 0;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	box-shadow: 0 0 0 0;
+}
+
+#contact-form textarea {
+	min-height: 200px;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Contact Form Input Focus
+/*------------------------------------------*/
+
+.form-control:focus {
+	outline: 0px none;
+	box-shadow: none;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Contact Form Submit Button
+/*------------------------------------------*/
+
+#form_btn {
+	margin-top: 20px;
+}
+
+#form_btn .btn-theme {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	  Contact Form Error Message 
+/*------------------------------------------*/
+
+.error {
+	color: red;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+
+/* ==========================================================================
+   21. FOOTER
+   ========================================================================== */
+
+#footer {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	background-color: #262626;
+}
+
+#footer_copyright p {
+	color: #ddd;
+	line-height: 40px;
+}
+
+#footer_copyright p span {
+	color: #ffc400;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Footer Social Icons  
+/*------------------------------------------*/
+
+.contact-socials {
+	display: inline-block;
+	padding-left: 0;
+}
+
+.contact-socials li {
+	float: left;
+	width: auto !important;
+	display: inline-block !important;
+	vertical-align: top;
+	clear: none !important;
+	padding: 0;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Footer Social Icon Setting 
+/*------------------------------------------*/
+
+.foo_social {
+	text-align: center;
+	color: #999;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	line-height: 40px;
+	margin: 0 5px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+
+/*------------------------------------------*/
+
+
+/*	 Footer Social Icons Hover 
+/*------------------------------------------*/
+
+.foo_social.ico-facebook:hover {
+	background-color: #3b5998;
+	color: #fff;
+}
+
+.foo_social.ico-twitter:hover {
+	background-color: #00a9ed;
+	color: #fff;
+}
+
+.foo_social.ico-behance:hover {
+	background-color: #00a8e7;
+	color: #fff;
+}
+
+.foo_social.ico-google-plus:hover {
+	background-color: #cd1111;
+	color: #fff;
+}
+
+.foo_social.ico-linkedin:hover {
+	background-color: #015886;
+	color: #fff;
+}
+
+.foo_social.ico-dribbble:hover {
+	background-color: #d92d84;
+	color: #fff;
+}
+
+.foo_social.ico-instagram:hover {
+	background-color: #beb3a8;
+	color: #fff;
+}
+
+.foo_social.ico-pinterest:hover {
+	background-color: #ac281a;
+	color: #fff;
+}
+
+.foo_social.ico-dropbox:hover {
+	background-color: #008ad2;
+	color: #fff;
+}
+
+.foo_social.ico-skype:hover {
+	background-color: #00a9ed;
+	color: #fff;
+}
+
+.foo_social.ico-youtube:hover {
+	background-color: #cd1b20;
+	color: #fff;
+}
+
+.foo_social.ico-tumblr:hover {
+	background-color: #3a5976;
+	color: #fff;
+}
+
+.foo_social.ico-vimeo:hover {
+	background-color: #00adee;
+	color: #fff;
+}
+
+.foo_social.ico-flickr:hover {
+	background-color: #d2d2d2;
+	color: #fff;
+}
+
+.foo_social.ico-github:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.foo_social.ico-renren:hover {
+	background-color: #364a83;
+	color: #fff;
+}
+
+.foo_social.ico-vk:hover {
+	background-color: #3b5998;
+	color: #fff;
+}
+
+.foo_social.ico-xing:hover {
+	background-color: #015f5e;
+	color: #fff;
+}
+
+.foo_social.ico-weibo:hover {
+	background-color: #be4443;
+	color: #fff;
+}
+
+.foo_social.ico-rss:hover {
+	background-color: #ff6600;
+	color: #fff;
+}
+
+.foo_social.ico-digg:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.foo_social.ico-deviantart:hover {
+	background-color: #57675d;
+	color: #fff;
+}
+
+.foo_social.ico-envelope:hover {
+	background-color: #999;
+	color: #fff;
+}
+
+.foo_social.ico-delicious:hover {
+	background-color: #0A0A0A;
+	color: #fff;
+}
+
+
+/* ==========================================================================
+   22. SCROLL TO TOP
+   ========================================================================== */
+
+#scrollUp {
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
+	background-image: url(../img/icons/back-to-top.png);
+	background-repeat: no-repeat;
+	background-position: 50% 48%;
+	background-color:   #428bca;
+	-webkit-transition: all 250ms linear;
+	-moz-transition: all 250ms linear;
+	transition: all 250ms linear;
+}
+
+#scrollUp:hover {
+	background-color:   #418bca;
+}
+
+nav a#pull {
+	display: none;
+}
+
+
+/* ==========================================================================
+   23. CONTACT FORM RESPONSE PAGE   
+   ========================================================================== */
+
+#form_response {
+	margin: 50px auto;
+}
+
+#form_response .img-responsive {
+	display: inline-block;
+}
+
+#form_response h1 {
+	font-size: 26px;
+	font-weight: 400;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+#form_response p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+#form_response .btn-theme {
+	background-color: #ffc400;
+	color: #333;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+#form_response .btn-theme:hover {
+	background-color: #ffc400;
+	color: #fff;
+}
+
+
+/* ==========================================================================
+   STYLE CHANGER 
+   ========================================================================== */
+
+#stlChanger {
+	color: #cecece;
+	font-size: 14px;
+	overflow: hidden;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	z-index: 9999999;
+}
+
+#stlChanger .bgChanger {
+	position: relative;
+	overflow: hidden;
+}
+
+#stlChanger .bgChanger {
+	min-width: 220px;
+	min-height: 220px;
+}
+
+#stlChanger .blockChanger {
+	width: 170px;
+}
+
+#stlChanger .chBody {
+	background: #444;
+	width: 180px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #222;
+	border-radius: 0 6px 6px 0;
+}
+
+#stlChanger .chBut {
+	background: #ffc400;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	z-index: 1000000;
+	text-align: center;
+	border: 1px solid #d9a701;
+	border-left: none;
+	border-radius: 0px 4px 4px 0px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+#stlChanger .chBut:hover {
+	background: #d9a701;
+	border-color: #ffc400;
+}
+
+#stlChanger .chBut i {
+	color: #fff;
+	font-size: 26px;
+	margin: 7px 4px;
+}
+
+#stlChanger .stBlock {
+	position: relative;
+	overflow: hidden;
+}
+
+#stlChanger p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+#stlChanger .stBgs a {
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding: 0;
+	margin: 0 4px 0 0;
+	cursor: pointer;
+	opacity: 1;
+}
+
+#stlChanger .stBgs a:hover {
+	opacity: 0.7;
+}
+
+#stlChanger .btn-theme {
+	font-size: 13px;
+	padding: 4px 8px;
+}
+
+.s_1 {
+	color: #fff;
+	font-size: 13px;
+	padding: 2px 6px;
+	background-color: #303030;
+	border-radius: 4px;
+	line-height: 26px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.s_1:hover {
+	color: #333;
+	background-color: #ffc400;
+}
