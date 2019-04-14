@@ -1,2 +1,2 @@
-# devcrank
-devcrank :: landing page, WORK EVERYWHERE, FROM ANYWHERE !
+# devcorner
+devcorner :: landing page, WORK EVERYWHERE, FROM ANYWHERE !
